@@ -41,9 +41,7 @@ int main()
 				{
 					std::cout << "Nowy rekord!!!" << '\n';
 					rekord = punkty;
-					std::cout << "Trwa zapisywanie..." << '\n';
 					Zapisz(znakKlocka, kolorKlocka, rekord);
-					std::cout << "Zapisano ^^" << '\n';
 				}
 				break;
 			}
@@ -51,16 +49,13 @@ int main()
 			{
 				system("cls");
 				Ustawienia(znakKlocka, kolorKlocka);
-				std::cout << "Trwa zapisywanie..." << '\n';
 				Zapisz(znakKlocka, kolorKlocka, rekord);
-				std::cout << "Zapisano ^^" << '\n';
 				break;
 			}
 			case '3':
 			{
-				std::cout << "Trwa zapisywanie..." << '\n';
 				Zapisz(znakKlocka, kolorKlocka, rekord);
-				std::cout << "Zapisano, mozesz bezpiecznie zamknac gre ^^.";
+				std::cout << "Mozesz bezpiecznie zamknac gre ^^.";
 				break;
 			}
 			default:

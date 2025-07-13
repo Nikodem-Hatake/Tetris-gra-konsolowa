@@ -3,12 +3,14 @@
 //Zapis do pliku wszystkich danych gracza.
 void Zapisz(std::atomic_char & znakKlocka, std::atomic_short & kolorKlocka, uint64_t & rekord)
 {
+	std::cout << "Trwa zapisywanie..." << '\n';
 	std::fstream plik;
 	plik.open("UstawieniaOrazRekord.txt", std::ios::out);
 	if(plik.good())
 	{
 		plik << znakKlocka << '\n' << kolorKlocka << '\n' << rekord << '\n';
 		plik.close();
+		std::cout << "Zapisano ^^" << '\n';
 	}
 	else
 	{
