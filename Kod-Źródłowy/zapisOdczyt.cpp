@@ -13,7 +13,7 @@ void Zapisz(std::atomic_char & znakKlocka, std::atomic_short & kolorKlocka, uint
 	else
 	{
 		std::cout << "Nieudalo sie zapisac ustawien oraz rekordu do pliku" << '\n';
-		std::cout << "Sprawdz czy plik z tymi rzeczami jest w tej samej sciezce co plik gra.exe";
+		std::cout << "Sprawdz czy plik z tymi rzeczami jest w tej samej sciezce co plik Tetris.exe";
 		std::cout << "oraz ma uprawnienia pozwalajace na zapis i odczyt" << '\n';
 	}
 }
@@ -40,7 +40,7 @@ void Odczyt(std::atomic_char & znakKlocka, std::atomic_short & kolorKlocka, uint
 	else
 	{
 		std::cout << "Nieudalo sie otworzyc pliku z ustawieniami oraz zapisanym rekordem :(" << '\n';
-		std::cout << "Sprawdz czy plik z tymi rzeczami jest w tej samej sciezce co plik gra.exe";
+		std::cout << "Sprawdz czy plik z tymi rzeczami jest w tej samej sciezce co plik Tetris.exe";
 		std::cout << "oraz ma uprawnienia pozwalajace na zapis i odczyt" << '\n';
 	}
 }
